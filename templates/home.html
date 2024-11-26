@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrainBrew - Home</title>
+    <title>Brain Brew - Home</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-    <header>
-        <h1>Welcome to BrainBrew</h1>
-        <p>Your Productivity Study Café</p>
+    <!-- Fullscreen Banner Header -->
+    <header class="fullscreen-banner">
+        <div class="nav-buttons-top">
+            <button onclick="location.href='/timer'">Start Timer</button>
+            <button onclick="location.href='/about'">About</button>
+            <button onclick="location.href='/contact'">Contact</button>
+        </div>
     </header>
+
+    <!-- Other sections of the website -->
     <main>
         <section id="about">
-            <h2>About BrainBrew</h2>
-            <p>BrainBrew is your personalized Pomodoro timer with background sounds to boost focus and productivity.</p>
+            <h2>About Brain Brew</h2>
+            <p>Brain Brew is your personalized Pomodoro timer with background sounds to boost focus and productivity.</p>
         </section>
 
         <section id="features">
@@ -26,17 +32,12 @@
             </ul>
         </section>
 
-        <a href="/timer" class="btn">Start Timer</a>
-    </main>
-
-    <!-- Contact/Owner Section -->
-    <footer>
-        <div id="contact">
-            <h3>About the Developer</h3>
+        <footer>
+            <h2>About the Developer</h2>
             <p>This web app was built by <strong>Sandy Park</strong>. Feel free to reach out!</p>
-            <p>Email: <a href="mailto:yourbusiness@email.com">sandypark@onmail.com</a></p>
-        </div>
-        <p>© 2024 BrainBrew</p>
-    </footer>
+            <p>Email: <a href="mailto:sandypark@onmail.com">sandypark@onmail.com</a></p>
+            <p>© 2024 Brain Brew</p>
+        </footer>
+    </main>
 </body>
 </html>

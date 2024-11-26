@@ -15,8 +15,7 @@ def timer():
 # Route for the settings page
 @app.route("/settings")
 def settings():
-    return render_templat
-    maine("settings.html")
+    return render_template("settings.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
