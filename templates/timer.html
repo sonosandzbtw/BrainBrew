@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Pomodoro Timer</h1>
+        <p>Stay focused and productive with the Pomodoro technique.</p>
+    </header>
+    <main>
+        <div id="timer-container">
+            <!-- Dropdown to select timer duration -->
+            <label for="duration-select">Choose your timer:</label>
+            <select id="duration-select">
+                <option value="25">25 Minutes</option>
+                <option value="40">40 Minutes</option>
+                <option value="50">50 Minutes</option>
+                <option value="60">60 Minutes</option>
+            </select>
+
+            <div id="timer-display">25:00</div>
+
+            <div id="timer-controls">
+                <button id="start-btn">Start</button>
+                <button id="pause-btn">Pause</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+
+            <!-- Audio Controls -->
+            <div id="audio-controls">
+                <label for="audio-select">Choose a soundtrack:</label>
+                <select id="audio-select">
+                    <option value="cafe">Café Ambience</option>
+                    <option value="rain">Rain Sounds</option>
+                    <option value="ocean">Ocean Waves</option>
+                </select>
+                <button id="play-audio-btn">Play</button>
+                <button id="pause-audio-btn">Pause</button>
+
+                <!-- Volume Control -->
+                <label for="volume-control">Volume:</label>
+                <input type="range" id="volume-control" min="0" max="1" step="0.1" value="1">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 BrainBrew</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/timer.js') }}"></script>
+</body>
+</html>

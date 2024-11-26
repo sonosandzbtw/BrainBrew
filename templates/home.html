@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainBrew - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to BrainBrew</h1>
+        <p>Your Productivity Study Café</p>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About BrainBrew</h2>
+            <p>BrainBrew is your personalized Pomodoro timer with background sounds to boost focus and productivity.</p>
+        </section>
+
+        <section id="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Customizable Pomodoro Timer</li>
+                <li>Relaxing Background Sounds</li>
+                <li>Track Your Productivity</li>
+            </ul>
+        </section>
+
+        <a href="/timer" class="btn">Start Timer</a>
+    </main>
+
+    <!-- Contact/Owner Section -->
+    <footer>
+        <div id="contact">
+            <h3>About the Developer</h3>
+            <p>This web app was built by <strong>Sandy Park</strong>. Feel free to reach out!</p>
+            <p>Email: <a href="mailto:yourbusiness@email.com">sandypark@onmail.com</a></p>
+        </div>
+        <p>© 2024 BrainBrew</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,215 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #6c63ff;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Main Section */
+main {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #6c63ff;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background-color: #6c63ff;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.btn:hover {
+    background-color: #574bff;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #6c63ff;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Timer Page */
+#timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 20px;
+    border: 2px solid #6c63ff;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#timer-display {
+    font-size: 3em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#timer-controls {
+    display: flex;
+    gap: 10px;
+}
+
+#timer-controls button {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#timer-controls button:hover {
+    background-color: #574bff;
+}
+/* Dropdown Styling */
+#duration-select {
+    font-size: 1em;
+    padding: 10px;
+    border: 2px solid #6c63ff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: #333;
+    background-color: #fff;
+}
+#duration-select:focus {
+    outline: none;
+    border-color: #574bff;
+}
+/* Audio Controls */
+#audio-controls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#audio-controls label {
+    font-size: 1.1em;
+    margin-right: 10px;
+}
+
+#audio-controls select {
+    font-size: 1em;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#audio-controls button {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#audio-controls button:hover {
+    background-color: #574bff;
+}
+/* Footer Contact Section */
+#contact {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#contact h3 {
+    font-size: 1.5em;
+    color: #6c63ff;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+#contact a {
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
