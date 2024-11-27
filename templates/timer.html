@@ -8,34 +8,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="timer-page">
-    <main>
-        <h1>Pomodoro Timer</h1>
-        <p>Stay focused and productive with the Pomodoro technique.</p>
-        <div id="timer-container">
-            <label for="duration-select">Set Timer Duration:</label>
-            <select id="duration-select">
-                <option value="25">25 Minutes</option>
-                <option value="40">40 Minutes</option>
-                <option value="50">50 Minutes</option>
-            </select>
-            <div id="timer-display">25:00</div>
-            <div id="timer-controls">
-                <button id="start-btn">Start</button>
-                <button id="pause-btn">Pause</button>
-                <button id="reset-btn">Reset</button>
-            </div>
-            <div id="audio-controls">
-                <label for="audio-select">Choose Background Sound:</label>
-                <select id="audio-select">
-                    <option value="cafe">Café Ambience</option>
-                    <option value="rain">Rain Sounds</option>
-                    <option value="forest">Forest Ambience</option>
-                </select>
-                <button id="play-audio-btn">Play</button>
-                <button id="pause-audio-btn">Pause</button>
-            </div>
+    <h1>Pomodoro Timer</h1>
+    <p>Stay focused and productive with the Pomodoro technique.</p>
+    <div id="timer-container">
+        <label for="duration-select">Set Timer Duration:</label>
+        <select id="duration-select">
+            <option value="25">25 Minutes</option>
+            <option value="15">15 Minutes</option>
+            <option value="5">5 Minutes</option>
+        </select>
+        <div id="timer-display">25:00</div>
+        <div id="timer-controls">
+            <button id="start-button">Start</button>
+            <button id="pause-button">Pause</button>
+            <button id="reset-button">Reset</button>
         </div>
-    </main>
-    <script src="{{ url_for('static', filename='js/timer.js') }}"></script>
+        <div id="audio-controls">
+            <label for="background-sound">Sound:</label>
+            <select id="background-sound">
+                <option value="cafe">Café Ambience</option>
+                <option value="rain">Rain</option>
+                <option value="forest">Forest</option>
+            </select>
+            <button id="play-sound">Play</button>
+            <button id="pause-sound">Pause</button>
+        </div>
+    </div>
 </body>
 </html>

@@ -66,18 +66,18 @@ body {
 
 /* Timer Page */
 body.timer-page {
-    background-image: url('../images/timer-bg.jpg'); /* Update with your image path */
+    background-image: url('../images/timer-bg.jpg'); /* Ensure the path is correct */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex; /* Flexbox for centering */
+    display: flex; /* Use flexbox */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     height: 100vh; /* Full viewport height */
     margin: 0;
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    overflow: hidden; /* Prevent scrollbars */
+    flex-direction: column; /* Stack items vertically */
 }
 
 /* Header Text (Pomodoro Timer) */
@@ -85,16 +85,17 @@ body.timer-page {
 .timer-page p {
     color: white; /* Explicitly set color to white */
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6); /* Optional: Add subtle glow */
+    margin-bottom: 20px;
 }
 
 /* Timer Card */
 #timer-container {
     background: rgba(255, 255, 255, 0.9); /* White with slight transparency */
-    color: #333; /* Text color */
+    color: #333;
     padding: 30px;
-    border-radius: 15px; /* Rounded corners */
+    border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    max-width: 350px; /* Max width for responsive design */
+    max-width: 400px; /* Limit maximum width */
     width: 90%; /* Responsive width */
     text-align: center;
 }
@@ -105,10 +106,6 @@ body.timer-page {
     font-weight: bold;
     color: #6c63ff; /* Consistent color */
     margin-bottom: 20px; /* Space below the timer */
-}
-
-#timer-display:hover {
-    transform: scale(1.1); /* Slight zoom on hover for interaction */
 }
 
 /* Timer Controls */
@@ -178,38 +175,71 @@ body.timer-page {
     background-color: #d14d7e;
 }
 
-/* Footer */
-footer {
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #666;
-    padding: 10px;
-    background: #f3f3f3;
+/* Donate Page Styles */
+body.donate-page {
+    background-image: url('../images/donate-bg.jpg'); /* Update with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    height: 100vh; /* Full-screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
-/* Footer Contact Section */
-#contact {
-    margin-top: 20px;
+.donate-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.donate-box {
+    background: rgba(255, 255, 255, 0.9); /* White box with slight transparency */
+    color: #333;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    max-width: 600px;
+    width: 90%; /* Responsive width */
     text-align: center;
 }
 
-#contact h3 {
-    font-size: 1.5em;
-    color: #6c63ff;
-    margin-bottom: 10px;
+.donate-box h1, .donate-box h2 {
+    color: #6c63ff; /* Highlighted headings */
+    margin-bottom: 20px;
 }
 
-#contact p {
-    font-size: 1em;
+.donate-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.donate-box ul li {
+    margin: 10px 0;
+    font-size: 1rem;
     color: #333;
-    margin-bottom: 5px;
 }
 
-#contact a {
-    color: #6c63ff;
-    text-decoration: none;
+.donate-button {
+    background-color: #ff639a; /* Aesthetic pink */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
 }
 
-#contact a:hover {
-    text-decoration: underline;
+.donate-button:hover {
+    background-color: #d14d7e; /* Darker pink */
+    transform: scale(1.05); /* Slight zoom effect */
 }

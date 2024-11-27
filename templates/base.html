@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,12 +8,14 @@
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/timer">Timer</a></li>
-            <li><a href="/settings">Settings</a></li>
-        </ul>
-    </nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/timer">Timer</a></li>
+        <li><a href="/settings">Settings</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/donate">Donate</a></li> <!-- Make sure it's "Donate" -->
+    </ul>
+</nav>
     {% block content %}{% endblock %}
     <footer>
         <p>© 2024 BrainBrew</p>

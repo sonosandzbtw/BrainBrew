@@ -17,5 +17,16 @@ def timer():
 def settings():
     return render_template("settings.html")
 
+# Route for the about page
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
+# Route for the donate page
+@app.route("/donate")
+def donate():
+    return render_template("donate.html")
+
+# Start the application
 if __name__ == "__main__":
     app.run(debug=True)
